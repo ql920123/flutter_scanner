@@ -1,0 +1,28 @@
+PODS:
+  - Flutter (1.0.0)
+  - permission_handler_apple (9.1.1):
+    - Flutter
+  - scanner (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - scanner (from `.symlinks/plugins/scanner/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  scanner:
+    :path: ".symlinks/plugins/scanner/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
+  scanner: d7d3769b938de1a15d043d5720db8eb9246e82bf
+
+PODFILE CHECKSUM: 02caaa843f6501172c0d470d80e72f61175c8b93
+
+COCOAPODS: 1.11.2
