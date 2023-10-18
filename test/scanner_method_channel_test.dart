@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:scanner/scanner_method_channel.dart';
+import 'package:flutter_card_scanner/scanner_method_channel.dart';
 
 void main() {
   MethodChannelScanner platform = MethodChannelScanner();
@@ -8,15 +8,15 @@ void main() {
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
-  });
-
-  tearDown(() {
-    channel.setMockMethodCallHandler(null);
-  });
+  // setUp(() {
+  //   channel.setMockMethodCallHandler((MethodCall methodCall) async {
+  //     return '42';
+  //   });
+  // });
+  //
+  // tearDown(() {
+  //   channel.setMockMethodCallHandler(null);
+  // });
 
   test('getPlatformVersion', () async {
     expect(await platform.getPlatformVersion(), '42');

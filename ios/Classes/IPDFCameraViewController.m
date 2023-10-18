@@ -229,7 +229,10 @@
 
   _isStopped = NO;
 
-  [self.captureSession startRunning];
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+      // Start the AVCaptureSession on a background thread
+      [self.captureSession startRunning];
+  });
 
   float detectionRefreshRate = _detectionRefreshRateInMS;
   CGFloat detectionRefreshRateInSec = detectionRefreshRate/100;
